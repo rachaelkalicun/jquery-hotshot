@@ -13,8 +13,11 @@ $(function () {
 		positions = [];
 
 
-
-
-
+    //add custom marker 
+    var homeMarker = new api.Marker({
+        position: mapCenter,
+        map: map,
+        icon: "img/hq.png"
+    });
 
 });
