@@ -20,4 +20,12 @@ $(function () {
         icon: "img/hq.png"
     });
 
+    var infoWindow = new api.InfoWindow({
+    	content: document.getElementById("hqInfo")
+    });
+
+    api.event.addListener(homeMarker, "click", function() {
+    	infoWindow.open(map, homeMarker);
+    });
+
 });
